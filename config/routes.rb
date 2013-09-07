@@ -1,6 +1,6 @@
 require 'resque/server'
 
-RailsHerokuBootstrap::Application.routes.draw do
+GuiaVendaMais::Application.routes.draw do
   mount Mercury::Engine => '/'
   mount Ckeditor::Engine => '/ckeditor'
   mount Kss::Engine => '/kss' if Rails.env.development?
