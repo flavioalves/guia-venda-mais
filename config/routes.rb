@@ -3,7 +3,6 @@ require 'resque/server'
 GuiaVendaMais::Application.routes.draw do
   mount Mercury::Engine => '/'
   mount Ckeditor::Engine => '/ckeditor'
-  mount Kss::Engine => '/kss' if Rails.env.development?
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 

@@ -4,24 +4,19 @@
 //
 // FRAMEWORKS AND PLUGINS
 // --------------------------------------------------
-//=require "bootstrap/custom"
-//=require "font-awesome"
+@import "bootstrap/bootstrap"
+@import "bootstrap/bootstrap-responsive"
+@import "font-awesome"
 //
 // COMPASS
 // --------------------------------------------------
 // tollkit includes: compass, color-schemer and breakpoint
 @import "toolkit" 
-@import "singularitygs"
-@import "singularity-extras"
 @import "normalize"
 
 // BASE PARTIALS
 // --------------------------------------------------
 @import "variables"
-@import "mixins"
-@import "print"
-@import "fonts"
-@import "lt_ie9"
 
 // ---------------------------------------------------------------------------------
 //  DEFAULT STYLES
@@ -29,19 +24,10 @@
 html
   overflow-y: scroll
 
-// ACTIVATE THE VERTICAL RHYTHM
-// --------------------------------------------------
-+establish-baseline
-
-// GRIDS
-// --------------------------------------------------
-
 body
   .profiler-results
     display: none
 
-body[data-development-grid="show"]
-  +background-grid
+body
 
-  .profiler-results
-    display: block
+  padding-top: 60px
