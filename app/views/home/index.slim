@@ -1,7 +1,58 @@
-.container
-  h1
-    = edit_me :home_text do
-      h1 Home
+.l-home.container
+  .row
+    .main-content.span9
+      h1.title
+        = edit_me :home_title do
+          'Sua obra muito mais fácil.
 
-  p
-    = edit_me :home_other_text, 'Another text, just bellow it.'
+      p.lead
+        = edit_me :home_main_call_to_action do
+          'Encontre os melhores profissionais para executar sua obra ou reforma.
+      hr    
+      .search-box
+        p.lead
+         'O que você precisa para sua obra?
+        form.form-inline
+          
+          label.control-label.what Serviço
+          select
+            option Serralheiro
+            option Marceneiro
+      
+          label.control-label.where Onde
+          select
+            option Brasília
+            option Planaltina
+          button.btn
+            i.icon-search &nbsp Pesquisar
+
+      .how-it-works
+
+        .box.first-box.span4
+          p.lead
+            = edit_me :home_about_search_box do
+              'Escolha os serviços que você necessita e encontre os profissionais de sua região!
+          button.btn.btn-success.btn-large
+           'Quero Pesquisar
+
+        .box.span4
+          p.lead
+            = edit_me :home_about_search_box do
+              'Você é um profissional ou empresa? Entre em contato e cadastre-se!
+          button.btn.btn-success.btn-large
+           'Quero Anunciar
+
+
+          
+         
+    .ads-container.span3
+      h2
+       ' some ads      
+
+  hr.pull-margin-top              
+  .row
+    .featured-itens   
+      = render partial: 'modules/featured_box'
+      = render partial: 'modules/featured_box'
+      = render partial: 'modules/featured_box'
+      = render partial: 'modules/featured_box'
