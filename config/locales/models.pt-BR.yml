@@ -6,6 +6,9 @@ pt-BR:
       admin_user: Administrador(es)
       content_block: Bloco(s) de Conteúdo
       contact: Contato(s)
+      city: Cidade(s)
+      category: Categoria(s)
+      company: Empresa(s)
     attributes:
       contact:
         name: Nome
@@ -42,3 +45,15 @@ pt-BR:
         updated_at: Atualizado em
         current_sign_in_at: Último login em
         sign_in_count: No. de logins
+      city:
+        name: Cidade  
+      category:
+        name: Categoria  
+      company:
+        address: Endereço
+        description: Descrição
+        name: Nome da empresa 
+        owner: Nome do contato 
+        phone: Telefone(s) 
+        website: Site        
+          

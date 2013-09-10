@@ -12,6 +12,9 @@ pt-BR:
       call_to_action: |
         Para editar ou visualizar elementos desta aplicação
         utilize a barra de navegação acima.
+      city: Cidade(s)
+      category: Categoria(s)
+      company: Empresa(s)        
     mercury:
       edit_button: Editor
     contacts:

@@ -3,7 +3,7 @@ require 'resque/server'
 GuiaVendaMais::Application.routes.draw do
   mount Mercury::Engine => '/'
   mount Ckeditor::Engine => '/ckeditor'
-
+  
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   authenticate :admin_user do
