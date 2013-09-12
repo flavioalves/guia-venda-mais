@@ -1,5 +1,8 @@
 class HomeController < ApplicationController
 
-  def index; end
+  def index
+    @categorias = Category.all
+    @cidades = City.all 
+  end
 
 end

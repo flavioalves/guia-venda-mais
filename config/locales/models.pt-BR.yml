@@ -55,5 +55,8 @@ pt-BR:
         name: Nome da empresa 
         owner: Nome do contato 
         phone: Telefone(s) 
-        website: Site        
+        website: Site
+        citys: Cidade(s)
+        categorys: Categoria
+        featured: Empresa Destaque
           

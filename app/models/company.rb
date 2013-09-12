@@ -6,7 +6,8 @@ class Company < ActiveRecord::Base
                   :phone, 
                   :website,
                   :city_ids, 
-                  :category_ids
+                  :category_ids,
+                  :featured
 
   has_and_belongs_to_many :citys
   has_and_belongs_to_many :categorys

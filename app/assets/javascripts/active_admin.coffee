@@ -1,8 +1,11 @@
 #= require jquery
 #= require jquery_ujs
 #= require jquery.ui.all
-#= require active_admin/application
 #= require chosen-jquery
+
+CKEDITOR_BASEPATH = "/assets/ckeditor/"
+
+#= require active_admin/application
 #= require ckeditor/init
 
 $ ->
@@ -29,3 +32,5 @@ $ ->
   $('select').chosen
     no_results_text: 'Nenhum resultado para'
     allow_single_deselect: true
+
+  

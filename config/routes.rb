@@ -21,6 +21,7 @@ GuiaVendaMais::Application.routes.draw do
   put '/usuarios' => 'settings#update', as: :update_user
   
   root  to:                     'home#index'
+  get   'empresas'           => 'companys#show', as: :company
   get   'contato'            => 'contacts#index', as: :contacts
   match 'contato/enviar'     => 'contacts#new',   as: :new_contact
 

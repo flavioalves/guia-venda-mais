@@ -1,9 +1,10 @@
-.featured-box.span3
+.company-info-box.span6
   ul
     li.service 
       - empresa.categorys.each do |c| 
         = c.name
     li.company #{empresa.name}
+    li.description #{empresa.description}
     li.phone #{empresa.phone}
     li.site 
       a href="#{empresa.website}" target="_blank" #{empresa.website}

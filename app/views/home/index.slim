@@ -1,6 +1,6 @@
 .l-home.container
   .row
-    .main-content.span9
+    .main-content.span8
       h1.title
         = edit_me :home_title do
           'Sua obra muito mais fácil.
@@ -8,23 +8,11 @@
       p.lead
         = edit_me :home_main_call_to_action do
           'Encontre os melhores profissionais para executar sua obra ou reforma.
-      hr    
-      .search-box
+      hr          
         p.lead
          'O que você precisa para sua obra?
-        form.form-inline
-          
-          label.control-label.what Serviço
-          select
-            option Serralheiro
-            option Marceneiro
-      
-          label.control-label.where Onde
-          select
-            option Brasília
-            option Planaltina
-          button.btn
-            i.icon-search &nbsp Pesquisar
+
+        = render partial: 'modules/search_form', locals: {categorias: @categorias, cidades: @cidades}
 
       .how-it-works
 
@@ -45,14 +33,13 @@
 
           
          
-    .ads-container.span3
+    .ads-container.span2
       h2
        ' some ads      
 
   hr.pull-margin-top              
   .row
     .featured-itens   
-      = render partial: 'modules/featured_box'
-      = render partial: 'modules/featured_box'
-      = render partial: 'modules/featured_box'
-      = render partial: 'modules/featured_box'
+      = render partial: 'frontend/featured_box'
+      = render partial: 'frontend/featured_box'
+      = render partial: 'frontend/featured_box'
