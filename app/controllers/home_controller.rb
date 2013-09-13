@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-
+  layout 'home'
   def index
     @categorias = Category.all
     @cidades = City.all 
