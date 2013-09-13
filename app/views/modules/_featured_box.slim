@@ -1,9 +1,9 @@
 .featured-box.span3
   ul
+    li.company #{empresa.name}
     li.service 
       - empresa.categorys.each do |c| 
         = c.name
-    li.company #{empresa.name}
-    li.phone #{empresa.phone}
-    li.site 
+    li.phone.icon-phone #{empresa.phone}
+    li.site.icon-hand-right 
       a href="#{empresa.website}" target="_blank" #{empresa.website}

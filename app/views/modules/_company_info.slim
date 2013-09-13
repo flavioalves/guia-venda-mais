@@ -4,7 +4,7 @@
       - empresa.categorys.each do |c| 
         = c.name
     li.company #{empresa.name}
-    li.description #{empresa.description}
-    li.phone #{empresa.phone}
-    li.site 
+    li.description.icon-info &nbsp #{empresa.description}
+    li.phone.icon-phone #{empresa.phone}
+    li.site.icon-hand-right 
       a href="#{empresa.website}" target="_blank" #{empresa.website}
