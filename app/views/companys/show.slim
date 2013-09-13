@@ -1,7 +1,8 @@
 
-p Pesquisa
+p.lead
+ 'O que você precisa para sua obra?
 = render partial: 'modules/search_form', locals: {categorias: @categorias, cidades: @cidades}
-
+hr
 
 h1 #{@empresas.count} resultados disponíveis
 - @empresas.each do |e|
