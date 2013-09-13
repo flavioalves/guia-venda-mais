@@ -1,5 +1,7 @@
 class CompanysController < ApplicationController
-  
+
+  layout 'companys_list_page'
+
   def show
     @categorias = Category.all
     @cidades = City.all 
