@@ -27,13 +27,14 @@ html.no-js lang="#{I18n.locale}"
     == render 'layouts/mercury_edit_button' if current_admin_user.present?
     == render 'layouts/header'
 
-    // section.page
-    //   - if notice.present?
-    //     .notice == notice
-    //   - if alert.present?
-    //     .alert == alert
-
-    == yield
+    .container
+      .row
+        .content.span8
+          == yield
+          
+        .ads-container.span2
+          h2
+           ' some ads    
 
     == render 'layouts/footer'
 

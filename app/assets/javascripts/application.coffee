@@ -6,3 +6,4 @@
 #= require validator
 #= require user
 #= require contact_form
+#= require utils

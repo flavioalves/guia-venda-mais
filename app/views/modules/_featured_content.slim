@@ -1,0 +1,5 @@
+.row
+  .featured-itens.span10 
+    hr 
+    - destaques.each do |destaque|       
+      = render partial: 'modules/featured_box', locals: { empresa:  destaque }

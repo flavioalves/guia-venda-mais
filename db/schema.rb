@@ -91,9 +91,9 @@ ActiveRecord::Schema.define(:version => 20130912190812) do
     t.string   "website"
     t.text     "description"
     t.string   "owner"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
-    t.boolean  "featured"
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.boolean  "featured",    :default => false
   end
 
   create_table "contacts", :force => true do |t|

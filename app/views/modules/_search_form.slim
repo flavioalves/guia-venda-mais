@@ -1,8 +1,12 @@
 .search-box
-  = form_tag("#{company_path}", :method => "get", :class => "form-inline") do
+  = form_tag("#{company_path}", :method => "get", :class => "form-inline search-companies-form") do
     = label_tag(:category_id, "Serviço", :class => "control-label what")
-    = select_tag(:category_id, options_from_collection_for_select(categorias, :id, :name))
+    = select_tag(:category_id, options_from_collection_for_select(categorias, :id, :name), 
+                { include_blank: true, :class => 'category-selection'})
+
     = label_tag(:city_id, "Onde", :class => "control-label where")
-    = select_tag(:city_id, options_from_collection_for_select(cidades, :id, :name))
+    = select_tag(:city_id, options_from_collection_for_select(cidades, :id, :name), 
+                { include_blank: true, :class => 'city-selection' })
+                
     button.btn type="submit"
       i.icon-search &nbsp Pesquisar

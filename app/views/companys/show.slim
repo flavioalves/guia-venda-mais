@@ -1,14 +1,10 @@
-.container
-  .row
-    .main-content.span8
-      p Pesquisa
-      = render partial: 'modules/search_form', locals: {categorias: @categorias, cidades: @cidades}
+
+p Pesquisa
+= render partial: 'modules/search_form', locals: {categorias: @categorias, cidades: @cidades}
 
 
-      h1 #{@empresas.count} resultados disponíveis
-      - @empresas.each do |e|
-        = render partial: 'modules/company_info', locals: { empresa: e }    
+h1 #{@empresas.count} resultados disponíveis
+- @empresas.each do |e|
+  = render partial: 'modules/company_info', locals: { empresa: e }    
 
-    .ads-container.span2
-      h2
-       ' some ads            
+= render partial: 'modules/featured_content', locals: { destaques: @destaques }       

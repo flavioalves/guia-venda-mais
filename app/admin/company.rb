@@ -7,11 +7,14 @@ ActiveAdmin.register Company do
 
   filter :name
   filter :featured
+  filter :citys_name, as: :string
+  filter :categorys_name, as: :string
+
 
   index do
     column :id
     column :name
-    column :featured
+    column :featured      
     default_actions
   end
 
@@ -40,7 +43,18 @@ ActiveAdmin.register Company do
       row :owner
       row :phone
       row :website      
-      row :featured      
+      row :featured  
+      table_for company.citys do
+        column "Cidades" do |city|
+          city.name
+        end
+      end
+         
+      table_for company.categorys do
+        column "Categorias" do |category|
+          category.name
+        end
+      end          
     end
 
     active_admin_comments
