@@ -1,15 +1,16 @@
 .contacts-index
 
   h1 = I18n.t 'app.contacts.leave_a_message'
-  = form_tag new_contact_path, class: 'contact_form', remote: true do
+  = form_tag new_contact_path, class: 'form-horizontal contact-form', remote: true do
     = label_tag 'name', I18n.t('app.contacts.name')
-    = text_field_tag 'name', '', class: 'required'
+    = text_field_tag 'name', '', class: 'required input-large'
     = label_tag 'email', I18n.t('app.contacts.email')
-    = email_field_tag 'email', '', class: 'required'
+    = email_field_tag 'email', '', class: 'required input-large'
     = label_tag 'message', I18n.t('app.contacts.message')
-    = text_area_tag 'message', '', class: 'required'
+    = text_area_tag 'message', '', class: 'required', :rows => 10, :cols => 80
     = submit_tag I18n.t('app.contacts.form_ready'), data: { form_ready: I18n.t('app.contacts.form_ready'), \
                                                             form_sending: I18n.t('app.contacts.form_sending'), \
                                                             form_sent: I18n.t('app.contacts.form_sent'), \
                                                             form_error: I18n.t('app.contacts.form_error'), \
-                                                            form_warn: I18n.t('app.contacts.form_warn') }
+                                                            form_warn: I18n.t('app.contacts.form_warn') },
+                                                            class: 'btn'
