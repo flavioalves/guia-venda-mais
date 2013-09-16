@@ -29,6 +29,9 @@ html.no-js lang="#{I18n.locale}"
 
     .container
       .row
+        = image_tag("banner-guia.gif",  class: "home-page-banner")   
+
+      .row
         .content.span8
           == yield
           
@@ -46,11 +49,7 @@ html.no-js lang="#{I18n.locale}"
             #content
               h3 Relaxe.<br />Nós podemos te ajudar!
               a href="/quero_anunciar" Anuncie Aqui
-
-          h3 Publicidade
-          .mini-banner
-            'Anuncie Aqui                  
-
+                     
 
     == render 'layouts/footer'
 

@@ -33,14 +33,10 @@ html.no-js lang="#{I18n.locale}"
           == yield
           
         .ads-container.span2
-          ul.banner       
-            li Anuncie aqui!    
-            li Coloque sua empresa na internet
-            li Fazemos sua identidade visual e seu site
-            li Entre em contato!
+          = image_tag("anuncie.gif")
+
           h3 Publicidade
-          .mini-banner
-            'Anuncie Aqui    
+          = image_tag("banner-128.gif")    
 
     == render 'layouts/footer'
 
