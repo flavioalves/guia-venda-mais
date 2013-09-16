@@ -1,6 +1,6 @@
 $ ->
-  if ($ '.contact_form').exists()
-    new ContactForm '.contact_form'
+  if ($ '.contact-form').exists()
+    new ContactForm '.contact-form'
 
 class window.ContactForm
   constructor: (@form) ->
